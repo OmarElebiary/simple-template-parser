@@ -15,7 +15,7 @@ Let's say that we have an html template called ``profile.tpl`` :
 <h1>{username} profile</h1>
 
 <p><b>Name:</b> {name}</p>
-<p><b>Email:</b> {age}</p>
+<p><b>Email:</b> {email}</p>
 <p><b>Location:</b> {location}</p>
 ```
 
@@ -29,7 +29,7 @@ $profile = new TemplateParser("profile.tpl");
 
 $data = array("username" => "user_one", 
               "name" => "Ben",
-              "age" => "33",
+              "email" => "ben@example.com",
               "location" => "Egypt");
 
 $profile->set_data($data);
@@ -43,7 +43,7 @@ Output:
 <h1>user_one profile</h1>
 
 <p><b>Name:</b> Ben</p> 
-<p><b>Email:</b> 33</p> 
+<p><b>Email:</b> ben@example.com</p> 
 <p><b>Location:</b> Egypt</p>
 ```
 
